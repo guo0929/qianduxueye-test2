@@ -1,0 +1,734 @@
+2023-04-09 09:53:37.679 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2023-04-09 09:53:37.700 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m        [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-09 09:53:41.367 INFO  o.s.c.c.client.ConfigServicePropertySourceLocator :226  [32m        [0;39m Fetching config from server at : http://domain-config:8888/
+2023-04-09 09:53:44.577 INFO  o.s.c.c.client.ConfigServicePropertySourceLocator :150  [32m        [0;39m Located environment: name=api-system, profiles=[dev], label=dev, version=null, state=null
+2023-04-09 09:53:44.578 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration    :109  [32m        [0;39m Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-class path resource [config/dev/api-system-dev.yml]'}]
+2023-04-09 09:53:44.594 INFO  com.douding.system.SystemApplication              :663  [32m        [0;39m The following profiles are active: dev
+2023-04-09 09:53:58.929 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m        [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-09 09:53:58.950 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m        [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-09 09:53:58.987 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m        [0;39m Finished Spring Data repository scanning in 12 ms. Found 0 Redis repository interfaces.
+2023-04-09 09:53:59.399 INFO  o.springframework.cloud.context.scope.GenericScope:283  [32m        [0;39m BeanFactory id=2c6dd185-5e84-318b-aeab-2e185311e4a7
+2023-04-09 09:54:00.761 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2023-04-09 09:54:00.774 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2023-04-09 09:54:00.774 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2023-04-09 09:54:00.774 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-04-09 09:54:00.776 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2023-04-09 09:54:00.777 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-04-09 09:54:00.777 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-04-09 09:54:00.782 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2023-04-09 09:54:00.988 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-09 09:54:00.988 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m        [0;39m Root WebApplicationContext: initialization completed in 16381 ms
+2023-04-09 09:54:06.343 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2023-04-09 09:54:07.651 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-09 09:54:07.721 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:68   [32m        [0;39m Eureka HTTP Client uses RestTemplate.
+2023-04-09 09:54:08.944 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-09 09:54:09.008 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82   [32m        [0;39m Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-09 09:54:09.075 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :67   [32m        [0;39m Setting initial instance status as: STARTING
+2023-04-09 09:54:09.167 INFO  com.netflix.discovery.DiscoveryClient             :372  [32m        [0;39m Initializing Eureka in region us-east-1
+2023-04-09 09:54:09.171 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 09:54:09.193 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Disable delta property : false
+2023-04-09 09:54:09.193 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Single vip registry refresh property : null
+2023-04-09 09:54:09.193 INFO  com.netflix.discovery.DiscoveryClient             :1009 [32m        [0;39m Force full registry fetch : false
+2023-04-09 09:54:09.193 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application is null : false
+2023-04-09 09:54:09.193 INFO  com.netflix.discovery.DiscoveryClient             :1011 [32m        [0;39m Registered Applications size is zero : true
+2023-04-09 09:54:09.193 INFO  com.netflix.discovery.DiscoveryClient             :1013 [32m        [0;39m Application version is -1: true
+2023-04-09 09:54:09.194 INFO  com.netflix.discovery.DiscoveryClient             :1097 [32m        [0;39m Getting all instance registry info from the eureka server
+2023-04-09 09:54:10.625 INFO  com.netflix.discovery.DiscoveryClient             :1106 [32m        [0;39m The response status is 200
+2023-04-09 09:54:10.628 INFO  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2023-04-09 09:54:10.631 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-09 09:54:10.636 INFO  com.netflix.discovery.DiscoveryClient             :492  [32m        [0;39m Discovery Client initialized at timestamp 1681005250635 with initial instances count: 1
+2023-04-09 09:54:10.647 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application API-SYSTEM with eureka with status UP
+2023-04-09 09:54:10.648 INFO  com.netflix.discovery.DiscoveryClient             :1352 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1681005250648, current=UP, previous=STARTING]
+2023-04-09 09:54:10.650 INFO  com.netflix.discovery.DiscoveryClient             :873  [32m        [0;39m DiscoveryClient_API-SYSTEM/localhost:api-system:9001: registering service...
+2023-04-09 09:54:10.651 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2023-04-09 09:54:10.699 INFO  com.netflix.discovery.DiscoveryClient             :882  [32m        [0;39m DiscoveryClient_API-SYSTEM/localhost:api-system:9001 - registration status: 204
+2023-04-09 09:54:10.700 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2023-04-09 09:54:10.701 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :144  [32m        [0;39m Updating port to 9001
+2023-04-09 09:54:11.936 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-09 09:54:11.946 INFO  com.douding.system.SystemApplication              :61   [32m        [0;39m Started SystemApplication in 37.538 seconds (JVM running for 42.49)
+2023-04-09 09:54:11.948 INFO  com.douding.system.SystemApplication              :25   [32m        [0;39m 启动成功！！
+2023-04-09 09:54:11.948 INFO  com.douding.system.SystemApplication              :26   [32m        [0;39m System: 	http://127.0.0.1:9001
+2023-04-09 09:59:09.207 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 09:59:52.686 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 09:59:52.686 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-09 09:59:52.687 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 1 ms
+2023-04-09 09:59:52.866 INFO  com.douding.server.config.LogAspect               :76   [32mXEprLAig[0;39m ------------- 【图片验证码】操作开始 -------------
+2023-04-09 09:59:52.867 INFO  com.douding.server.config.LogAspect               :77   [32mXEprLAig[0;39m 请求地址: http://localhost:9001/system/admin/kaptcha/image-code/NKFLZB8Z GET
+2023-04-09 09:59:52.867 INFO  com.douding.server.config.LogAspect               :78   [32mXEprLAig[0;39m 类名方法: com.douding.system.controller.admin.KaptchaController.imageCode
+2023-04-09 09:59:52.867 INFO  com.douding.server.config.LogAspect               :79   [32mXEprLAig[0;39m 远程地址: 127.0.0.1
+2023-04-09 09:59:53.113 INFO  com.douding.server.config.LogAspect               :97   [32mXEprLAig[0;39m 请求参数: ["NKFLZB8Z",null,null]
+2023-04-09 10:00:01.140 INFO  com.douding.server.config.LogAspect               :109  [32mXEprLAig[0;39m 返回结果: null
+2023-04-09 10:00:01.141 INFO  com.douding.server.config.LogAspect               :110  [32mXEprLAig[0;39m ------------- 结束 耗时：8352 ms -------------
+2023-04-09 10:00:08.404 INFO  com.douding.server.config.LogAspect               :76   [32mlDHjT7Kg[0;39m ------------- 【用户】操作开始 -------------
+2023-04-09 10:00:08.404 INFO  com.douding.server.config.LogAspect               :77   [32mlDHjT7Kg[0;39m 请求地址: http://localhost:9001/system/admin/user/login POST
+2023-04-09 10:00:08.404 INFO  com.douding.server.config.LogAspect               :78   [32mlDHjT7Kg[0;39m 类名方法: com.douding.system.controller.admin.UserController.login
+2023-04-09 10:00:08.404 INFO  com.douding.server.config.LogAspect               :79   [32mlDHjT7Kg[0;39m 远程地址: 127.0.0.1
+2023-04-09 10:00:08.803 INFO  com.douding.server.config.LogAspect               :97   [32mlDHjT7Kg[0;39m 请求参数: [{"imageCodeToken":"NKFLZB8Z","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2023-04-09 10:00:09.448 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mlDHjT7Kg[0;39m HikariPool-1 - Starting...
+2023-04-09 10:00:12.974 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mlDHjT7Kg[0;39m HikariPool-1 - Start completed.
+2023-04-09 10:00:12.980 DEBUG c.douding.server.mapper.UserMapper.selectByExample:159  [32mlDHjT7Kg[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2023-04-09 10:00:13.003 DEBUG c.douding.server.mapper.UserMapper.selectByExample:159  [32mlDHjT7Kg[0;39m ==> Parameters: admin(String)
+2023-04-09 10:00:13.116 TRACE c.douding.server.mapper.UserMapper.selectByExample:165  [32mlDHjT7Kg[0;39m <==    Columns: id, login_name, name, password
+2023-04-09 10:00:13.117 TRACE c.douding.server.mapper.UserMapper.selectByExample:165  [32mlDHjT7Kg[0;39m <==        Row: T4wswetU, admin, alex, 1f15d405949c4ed3c2279aa6d48b1e9a
+2023-04-09 10:00:13.118 DEBUG c.douding.server.mapper.UserMapper.selectByExample:159  [32mlDHjT7Kg[0;39m <==      Total: 1
+2023-04-09 10:00:13.443 DEBUG c.d.server.mapper.my.MyUserMapper.findResources   :159  [32mlDHjT7Kg[0;39m ==>  Preparing: select distinct r.id, r.`name`, r.page, r.request, r.parent from role_user ru, role_resource rr, resource r where ru.user_id = ? and ru.role_id = rr.role_id and rr.resource_id = r.id order by r.id asc 
+2023-04-09 10:00:13.443 DEBUG c.d.server.mapper.my.MyUserMapper.findResources   :159  [32mlDHjT7Kg[0;39m ==> Parameters: T4wswetU(String)
+2023-04-09 10:00:13.455 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==    Columns: id, name, page, request, parent
+2023-04-09 10:00:13.455 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 00, 欢迎, welcome, null, 
+2023-04-09 10:00:13.456 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 01, 系统管理, null, null, 
+2023-04-09 10:00:13.456 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 0101, 用户管理, system/user, null, 01
+2023-04-09 10:00:13.456 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 010101, 保存, null, ["/system/admin/user/list","/system/admin/user/save"], 0101
+2023-04-09 10:00:13.457 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 010102, 删除, null, ["/system/admin/user/delete"], 0101
+2023-04-09 10:00:13.457 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 010103, 重置密码, null, ["/system/admin/user/save-password"], 0101
+2023-04-09 10:00:13.457 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 0102, 资源管理, system/resource, null, 01
+2023-04-09 10:00:13.457 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 010201, 保存/显示, null, ["/system/admin/resource"], 0102
+2023-04-09 10:00:13.458 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 0103, 角色管理, system/role, null, 01
+2023-04-09 10:00:13.458 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 010301, 角色/权限管理, null, ["/system/admin/role"], 0103
+2023-04-09 10:00:13.458 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 02, 业务管理, null, null, 
+2023-04-09 10:00:13.458 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 0201, 分类管理, business/category, null, 02
+2023-04-09 10:00:13.458 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 020101, 增删改查, null, ["/business/admin/category"], 0201
+2023-04-09 10:00:13.459 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 0202, 课程管理, business/course, null, 02
+2023-04-09 10:00:13.459 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 020201, 增删改查, null, ["/business/admin/course","/business/admin/category/all"], 0202
+2023-04-09 10:00:13.459 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 0203, 讲师管理, business/teacher, null, 02
+2023-04-09 10:00:13.459 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 020301, 增删改查, null, ["/business/admin/teacher"], 0203
+2023-04-09 10:00:13.460 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 0204, 会员管理, business/member, null, 02
+2023-04-09 10:00:13.460 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 020401, 增删改查, null, ["/business/admin/member"], 0204
+2023-04-09 10:00:13.460 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 0205, 短信管理, business/sms, null, 02
+2023-04-09 10:00:13.460 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 020501, 增删改查, null, ["/business/admin/sms"], 0205
+2023-04-09 10:00:13.461 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 0206, 大章管理, business/chapter, null, 02
+2023-04-09 10:00:13.461 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 020601, 增删改查, null, ["/business/admin/chapter"], 0206
+2023-04-09 10:00:13.461 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 0207, 小节管理, business/section, null, 02
+2023-04-09 10:00:13.461 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 020701, 增删改查, null, ["/business/admin/section"], 0207
+2023-04-09 10:00:13.462 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 0208, 课程内容, business/content, null, 02
+2023-04-09 10:00:13.462 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 020801, 增删改查, null, ["/business/admin/course","/business/admin/course-content-file"], 0208
+2023-04-09 10:00:13.462 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 03, 文件管理, null, null, 
+2023-04-09 10:00:13.462 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 0301, 文件管理, file/file, null, 03
+2023-04-09 10:00:13.463 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 030101, 文件管理, null, ["/file/admin/file"], 0301
+2023-04-09 10:00:13.463 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 030102, 文件验证, null, ["/file/admin/oss-check"], 0301
+2023-04-09 10:00:13.463 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mlDHjT7Kg[0;39m <==        Row: 030103, 文件上传, null, ["/file/admin/oss-append"], 0301
+2023-04-09 10:00:13.463 DEBUG c.d.server.mapper.my.MyUserMapper.findResources   :159  [32mlDHjT7Kg[0;39m <==      Total: 32
+2023-04-09 10:00:13.466 INFO  com.douding.server.service.UserService            :163  [32mlDHjT7Kg[0;39m 有权限的请求：[/system/admin/user/save, /business/admin/section, /file/admin/oss-check, /business/admin/teacher, /system/admin/user/save-password, /system/admin/role, /file/admin/oss-append, /business/admin/chapter, /business/admin/sms, /system/admin/user/delete, /business/admin/category/all, /business/admin/course-content-file, /business/admin/category, /business/admin/course, /business/admin/member, /system/admin/user/list, /system/admin/resource, /file/admin/file]
+2023-04-09 10:00:13.663 INFO  com.douding.system.controller.admin.UserController:124  [32mlDHjT7Kg[0;39m 用户登陆成功LoginUserDto{id='T4wswetU', loginName='admin', name='alex', resources=[ResourceDto{id='00', name='欢迎', page='welcome', request='null', parent='', children=null}, ResourceDto{id='01', name='系统管理', page='null', request='null', parent='', children=null}, ResourceDto{id='0101', name='用户管理', page='system/user', request='null', parent='01', children=null}, ResourceDto{id='010101', name='保存', page='null', request='["/system/admin/user/list","/system/admin/user/save"]', parent='0101', children=null}, ResourceDto{id='010102', name='删除', page='null', request='["/system/admin/user/delete"]', parent='0101', children=null}, ResourceDto{id='010103', name='重置密码', page='null', request='["/system/admin/user/save-password"]', parent='0101', children=null}, ResourceDto{id='0102', name='资源管理', page='system/resource', request='null', parent='01', children=null}, ResourceDto{id='010201', name='保存/显示', page='null', request='["/system/admin/resource"]', parent='0102', children=null}, ResourceDto{id='0103', name='角色管理', page='system/role', request='null', parent='01', children=null}, ResourceDto{id='010301', name='角色/权限管理', page='null', request='["/system/admin/role"]', parent='0103', children=null}, ResourceDto{id='02', name='业务管理', page='null', request='null', parent='', children=null}, ResourceDto{id='0201', name='分类管理', page='business/category', request='null', parent='02', children=null}, ResourceDto{id='020101', name='增删改查', page='null', request='["/business/admin/category"]', parent='0201', children=null}, ResourceDto{id='0202', name='课程管理', page='business/course', request='null', parent='02', children=null}, ResourceDto{id='020201', name='增删改查', page='null', request='["/business/admin/course","/business/admin/category/all"]', parent='0202', children=null}, ResourceDto{id='0203', name='讲师管理', page='business/teacher', request='null', parent='02', children=null}, ResourceDto{id='020301', name='增删改查', page='null', request='["/business/admin/teacher"]', parent='0203', children=null}, ResourceDto{id='0204', name='会员管理', page='business/member', request='null', parent='02', children=null}, ResourceDto{id='020401', name='增删改查', page='null', request='["/business/admin/member"]', parent='0204', children=null}, ResourceDto{id='0205', name='短信管理', page='business/sms', request='null', parent='02', children=null}, ResourceDto{id='020501', name='增删改查', page='null', request='["/business/admin/sms"]', parent='0205', children=null}, ResourceDto{id='0206', name='大章管理', page='business/chapter', request='null', parent='02', children=null}, ResourceDto{id='020601', name='增删改查', page='null', request='["/business/admin/chapter"]', parent='0206', children=null}, ResourceDto{id='0207', name='小节管理', page='business/section', request='null', parent='02', children=null}, ResourceDto{id='020701', name='增删改查', page='null', request='["/business/admin/section"]', parent='0207', children=null}, ResourceDto{id='0208', name='课程内容', page='business/content', request='null', parent='02', children=null}, ResourceDto{id='020801', name='增删改查', page='null', request='["/business/admin/course","/business/admin/course-content-file"]', parent='0208', children=null}, ResourceDto{id='03', name='文件管理', page='null', request='null', parent='', children=null}, ResourceDto{id='0301', name='文件管理', page='file/file', request='null', parent='03', children=null}, ResourceDto{id='030101', name='文件管理', page='null', request='["/file/admin/file"]', parent='0301', children=null}, ResourceDto{id='030102', name='文件验证', page='null', request='["/file/admin/oss-check"]', parent='0301', children=null}, ResourceDto{id='030103', name='文件上传', page='null', request='["/file/admin/oss-append"]', parent='0301', children=null}], requests=[/system/admin/user/save, /business/admin/section, /file/admin/oss-check, /business/admin/teacher, /system/admin/user/save-password, /system/admin/role, /file/admin/oss-append, /business/admin/chapter, /business/admin/sms, /system/admin/user/delete, /business/admin/category/all, /business/admin/course-content-file, /business/admin/category, /business/admin/course, /business/admin/member, /system/admin/user/list, /system/admin/resource, /file/admin/file], token='hKYjmKs7'}
+2023-04-09 10:00:13.668 INFO  com.douding.server.config.LogAspect               :109  [32mlDHjT7Kg[0;39m 返回结果: {"content":{"id":"T4wswetU","loginName":"admin","name":"alex","requests":["/system/admin/user/save","/business/admin/section","/file/admin/oss-check","/business/admin/teacher","/system/admin/user/save-password","/system/admin/role","/file/admin/oss-append","/business/admin/chapter","/business/admin/sms","/system/admin/user/delete","/business/admin/category/all","/business/admin/course-content-file","/business/admin/category","/business/admin/course","/business/admin/member","/system/admin/user/list","/system/admin/resource","/file/admin/file"],"resources":[{"id":"00","name":"欢迎","page":"welcome","parent":""},{"id":"01","name":"系统管理","parent":""},{"id":"0101","name":"用户管理","page":"system/user","parent":"01"},{"id":"010101","name":"保存","parent":"0101","request":"[\"/system/admin/user/list\",\"/system/admin/user/save\"]"},{"id":"010102","name":"删除","parent":"0101","request":"[\"/system/admin/user/delete\"]"},{"id":"010103","name":"重置密码","parent":"0101","request":"[\"/system/admin/user/save-password\"]"},{"id":"0102","name":"资源管理","page":"system/resource","parent":"01"},{"id":"010201","name":"保存/显示","parent":"0102","request":"[\"/system/admin/resource\"]"},{"id":"0103","name":"角色管理","page":"system/role","parent":"01"},{"id":"010301","name":"角色/权限管理","parent":"0103","request":"[\"/system/admin/role\"]"},{"id":"02","name":"业务管理","parent":""},{"id":"0201","name":"分类管理","page":"business/category","parent":"02"},{"id":"020101","name":"增删改查","parent":"0201","request":"[\"/business/admin/category\"]"},{"id":"0202","name":"课程管理","page":"business/course","parent":"02"},{"id":"020201","name":"增删改查","parent":"0202","request":"[\"/business/admin/course\",\"/business/admin/category/all\"]"},{"id":"0203","name":"讲师管理","page":"business/teacher","parent":"02"},{"id":"020301","name":"增删改查","parent":"0203","request":"[\"/business/admin/teacher\"]"},{"id":"0204","name":"会员管理","page":"business/member","parent":"02"},{"id":"020401","name":"增删改查","parent":"0204","request":"[\"/business/admin/member\"]"},{"id":"0205","name":"短信管理","page":"business/sms","parent":"02"},{"id":"020501","name":"增删改查","parent":"0205","request":"[\"/business/admin/sms\"]"},{"id":"0206","name":"大章管理","page":"business/chapter","parent":"02"},{"id":"020601","name":"增删改查","parent":"0206","request":"[\"/business/admin/chapter\"]"},{"id":"0207","name":"小节管理","page":"business/section","parent":"02"},{"id":"020701","name":"增删改查","parent":"0207","request":"[\"/business/admin/section\"]"},{"id":"0208","name":"课程内容","page":"business/content","parent":"02"},{"id":"020801","name":"增删改查","parent":"0208","request":"[\"/business/admin/course\",\"/business/admin/course-content-file\"]"},{"id":"03","name":"文件管理","parent":""},{"id":"0301","name":"文件管理","page":"file/file","parent":"03"},{"id":"030101","name":"文件管理","parent":"0301","request":"[\"/file/admin/file\"]"},{"id":"030102","name":"文件验证","parent":"0301","request":"[\"/file/admin/oss-check\"]"},{"id":"030103","name":"文件上传","parent":"0301","request":"[\"/file/admin/oss-append\"]"}],"token":"hKYjmKs7"},"success":true}
+2023-04-09 10:00:13.669 INFO  com.douding.server.config.LogAspect               :110  [32mlDHjT7Kg[0;39m ------------- 结束 耗时：5266 ms -------------
+2023-04-09 10:04:09.223 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 10:09:09.232 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 10:14:09.245 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 10:19:09.245 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 10:24:09.258 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 10:29:09.261 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 10:34:09.272 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 10:39:09.280 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 10:44:09.293 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 10:49:09.308 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 10:54:09.314 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 10:59:09.317 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 11:00:41.543 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :62   [32m        [0;39m Unregistering application API-SYSTEM with eureka with status DOWN
+2023-04-09 11:00:41.544 INFO  com.netflix.discovery.DiscoveryClient             :1352 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1681009241544, current=DOWN, previous=UP]
+2023-04-09 11:00:41.544 INFO  com.netflix.discovery.DiscoveryClient             :873  [32m        [0;39m DiscoveryClient_API-SYSTEM/localhost:api-system:9001: registering service...
+2023-04-09 11:00:41.556 INFO  com.netflix.discovery.DiscoveryClient             :882  [32m        [0;39m DiscoveryClient_API-SYSTEM/localhost:api-system:9001 - registration status: 204
+2023-04-09 11:00:41.774 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m        [0;39m HikariPool-1 - Shutdown initiated...
+2023-04-09 11:00:41.777 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m        [0;39m HikariPool-1 - Shutdown completed.
+2023-04-09 11:00:42.131 INFO  com.netflix.discovery.DiscoveryClient             :935  [32m        [0;39m Shutting down DiscoveryClient ...
+2023-04-09 11:00:45.143 INFO  com.netflix.discovery.DiscoveryClient             :971  [32m        [0;39m Unregistering ...
+2023-04-09 11:00:45.153 INFO  com.netflix.discovery.DiscoveryClient             :973  [32m        [0;39m DiscoveryClient_API-SYSTEM/localhost:api-system:9001 - deregister  status: 200
+2023-04-09 11:00:45.166 INFO  com.netflix.discovery.DiscoveryClient             :960  [32m        [0;39m Completed shut down of DiscoveryClient
+2023-04-09 11:00:47.799 INFO  o.s.c.c.client.ConfigServicePropertySourceLocator :226  [32m        [0;39m Fetching config from server at : http://domain-config:8888/
+2023-04-09 11:00:47.906 INFO  o.s.c.c.client.ConfigServicePropertySourceLocator :150  [32m        [0;39m Located environment: name=api-system, profiles=[dev], label=dev, version=null, state=null
+2023-04-09 11:00:47.906 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration    :109  [32m        [0;39m Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-class path resource [config/dev/api-system-dev.yml]'}]
+2023-04-09 11:00:47.918 INFO  com.douding.system.SystemApplication              :663  [32m        [0;39m The following profiles are active: dev
+2023-04-09 11:00:48.209 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m        [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-09 11:00:48.210 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m        [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-09 11:00:48.211 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m        [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2023-04-09 11:00:48.270 INFO  o.springframework.cloud.context.scope.GenericScope:283  [32m        [0;39m BeanFactory id=db55f9b7-b9f2-3933-92f8-9a15b281684b
+2023-04-09 11:00:48.433 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2023-04-09 11:00:48.433 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2023-04-09 11:00:48.434 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2023-04-09 11:00:48.434 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-04-09 11:00:48.434 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2023-04-09 11:00:48.435 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-04-09 11:00:48.435 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-04-09 11:00:48.436 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2023-04-09 11:00:48.477 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-09 11:00:48.477 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m        [0;39m Root WebApplicationContext: initialization completed in 556 ms
+2023-04-09 11:00:49.215 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2023-04-09 11:00:50.430 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-09 11:00:50.454 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:68   [32m        [0;39m Eureka HTTP Client uses RestTemplate.
+2023-04-09 11:00:51.672 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-09 11:00:51.712 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82   [32m        [0;39m Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-09 11:00:51.752 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :67   [32m        [0;39m Setting initial instance status as: STARTING
+2023-04-09 11:00:51.758 INFO  com.netflix.discovery.DiscoveryClient             :372  [32m        [0;39m Initializing Eureka in region us-east-1
+2023-04-09 11:00:51.758 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 11:00:51.807 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Disable delta property : false
+2023-04-09 11:00:51.807 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Single vip registry refresh property : null
+2023-04-09 11:00:51.807 INFO  com.netflix.discovery.DiscoveryClient             :1009 [32m        [0;39m Force full registry fetch : false
+2023-04-09 11:00:51.807 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application is null : false
+2023-04-09 11:00:51.807 INFO  com.netflix.discovery.DiscoveryClient             :1011 [32m        [0;39m Registered Applications size is zero : true
+2023-04-09 11:00:51.807 INFO  com.netflix.discovery.DiscoveryClient             :1013 [32m        [0;39m Application version is -1: true
+2023-04-09 11:00:51.807 INFO  com.netflix.discovery.DiscoveryClient             :1097 [32m        [0;39m Getting all instance registry info from the eureka server
+2023-04-09 11:00:51.824 INFO  com.netflix.discovery.DiscoveryClient             :1106 [32m        [0;39m The response status is 200
+2023-04-09 11:00:51.825 INFO  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2023-04-09 11:00:51.826 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-09 11:00:51.827 INFO  com.netflix.discovery.DiscoveryClient             :492  [32m        [0;39m Discovery Client initialized at timestamp 1681009251827 with initial instances count: 5
+2023-04-09 11:00:51.833 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application API-SYSTEM with eureka with status UP
+2023-04-09 11:00:51.833 INFO  com.netflix.discovery.DiscoveryClient             :1352 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1681009251833, current=UP, previous=STARTING]
+2023-04-09 11:00:51.834 INFO  com.netflix.discovery.DiscoveryClient             :873  [32m        [0;39m DiscoveryClient_API-SYSTEM/localhost:api-system:9001: registering service...
+2023-04-09 11:00:51.834 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2023-04-09 11:00:51.838 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2023-04-09 11:00:51.840 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :144  [32m        [0;39m Updating port to 9001
+2023-04-09 11:00:51.843 INFO  com.netflix.discovery.DiscoveryClient             :882  [32m        [0;39m DiscoveryClient_API-SYSTEM/localhost:api-system:9001 - registration status: 204
+2023-04-09 11:00:53.052 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-09 11:00:53.058 INFO  com.douding.system.SystemApplication              :61   [32m        [0;39m Started SystemApplication in 7.815 seconds (JVM running for 4043.601)
+2023-04-09 11:00:53.060 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2023-04-09 11:00:53.060 INFO  com.douding.system.SystemApplication              :25   [32m        [0;39m 启动成功！！
+2023-04-09 11:00:53.060 INFO  com.douding.system.SystemApplication              :26   [32m        [0;39m System: 	http://127.0.0.1:9001
+2023-04-09 11:02:33.917 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :62   [32m        [0;39m Unregistering application API-SYSTEM with eureka with status DOWN
+2023-04-09 11:02:33.917 INFO  com.netflix.discovery.DiscoveryClient             :1352 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1681009353917, current=DOWN, previous=UP]
+2023-04-09 11:02:33.917 INFO  com.netflix.discovery.DiscoveryClient             :873  [32m        [0;39m DiscoveryClient_API-SYSTEM/localhost:api-system:9001: registering service...
+2023-04-09 11:02:33.921 INFO  com.netflix.discovery.DiscoveryClient             :882  [32m        [0;39m DiscoveryClient_API-SYSTEM/localhost:api-system:9001 - registration status: 204
+2023-04-09 11:02:33.953 INFO  com.netflix.discovery.DiscoveryClient             :935  [32m        [0;39m Shutting down DiscoveryClient ...
+2023-04-09 11:02:36.956 INFO  com.netflix.discovery.DiscoveryClient             :971  [32m        [0;39m Unregistering ...
+2023-04-09 11:02:36.958 INFO  com.netflix.discovery.DiscoveryClient             :973  [32m        [0;39m DiscoveryClient_API-SYSTEM/localhost:api-system:9001 - deregister  status: 200
+2023-04-09 11:02:36.961 INFO  com.netflix.discovery.DiscoveryClient             :960  [32m        [0;39m Completed shut down of DiscoveryClient
+2023-04-09 11:02:39.478 INFO  o.s.c.c.client.ConfigServicePropertySourceLocator :226  [32m        [0;39m Fetching config from server at : http://domain-config:8888/
+2023-04-09 11:02:39.494 INFO  o.s.c.c.client.ConfigServicePropertySourceLocator :150  [32m        [0;39m Located environment: name=api-system, profiles=[dev], label=dev, version=null, state=null
+2023-04-09 11:02:39.494 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration    :109  [32m        [0;39m Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-class path resource [config/dev/api-system-dev.yml]'}]
+2023-04-09 11:02:39.502 INFO  com.douding.system.SystemApplication              :663  [32m        [0;39m The following profiles are active: dev
+2023-04-09 11:02:39.685 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m        [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-09 11:02:39.685 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m        [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-09 11:02:39.687 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m        [0;39m Finished Spring Data repository scanning in 1 ms. Found 0 Redis repository interfaces.
+2023-04-09 11:02:39.732 INFO  o.springframework.cloud.context.scope.GenericScope:283  [32m        [0;39m BeanFactory id=2c6dd185-5e84-318b-aeab-2e185311e4a7
+2023-04-09 11:02:39.811 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2023-04-09 11:02:39.812 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2023-04-09 11:02:39.812 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2023-04-09 11:02:39.812 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-04-09 11:02:39.812 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2023-04-09 11:02:39.812 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-04-09 11:02:39.812 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-04-09 11:02:39.813 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2023-04-09 11:02:39.835 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-09 11:02:39.835 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m        [0;39m Root WebApplicationContext: initialization completed in 331 ms
+2023-04-09 11:02:40.402 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2023-04-09 11:02:41.608 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-09 11:02:41.627 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:68   [32m        [0;39m Eureka HTTP Client uses RestTemplate.
+2023-04-09 11:02:42.856 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-09 11:02:42.914 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82   [32m        [0;39m Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-09 11:02:42.958 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :67   [32m        [0;39m Setting initial instance status as: STARTING
+2023-04-09 11:02:42.962 INFO  com.netflix.discovery.DiscoveryClient             :372  [32m        [0;39m Initializing Eureka in region us-east-1
+2023-04-09 11:02:42.962 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 11:02:42.966 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Disable delta property : false
+2023-04-09 11:02:42.966 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Single vip registry refresh property : null
+2023-04-09 11:02:42.966 INFO  com.netflix.discovery.DiscoveryClient             :1009 [32m        [0;39m Force full registry fetch : false
+2023-04-09 11:02:42.967 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application is null : false
+2023-04-09 11:02:42.967 INFO  com.netflix.discovery.DiscoveryClient             :1011 [32m        [0;39m Registered Applications size is zero : true
+2023-04-09 11:02:42.967 INFO  com.netflix.discovery.DiscoveryClient             :1013 [32m        [0;39m Application version is -1: true
+2023-04-09 11:02:42.967 INFO  com.netflix.discovery.DiscoveryClient             :1097 [32m        [0;39m Getting all instance registry info from the eureka server
+2023-04-09 11:02:42.991 INFO  com.netflix.discovery.DiscoveryClient             :1106 [32m        [0;39m The response status is 200
+2023-04-09 11:02:42.992 INFO  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2023-04-09 11:02:42.993 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-09 11:02:42.995 INFO  com.netflix.discovery.DiscoveryClient             :492  [32m        [0;39m Discovery Client initialized at timestamp 1681009362995 with initial instances count: 4
+2023-04-09 11:02:43.001 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application API-SYSTEM with eureka with status UP
+2023-04-09 11:02:43.001 INFO  com.netflix.discovery.DiscoveryClient             :1352 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1681009363001, current=UP, previous=STARTING]
+2023-04-09 11:02:43.001 INFO  com.netflix.discovery.DiscoveryClient             :873  [32m        [0;39m DiscoveryClient_API-SYSTEM/localhost:api-system:9001: registering service...
+2023-04-09 11:02:43.002 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2023-04-09 11:02:43.007 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2023-04-09 11:02:43.008 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :144  [32m        [0;39m Updating port to 9001
+2023-04-09 11:02:43.013 INFO  com.netflix.discovery.DiscoveryClient             :882  [32m        [0;39m DiscoveryClient_API-SYSTEM/localhost:api-system:9001 - registration status: 204
+2023-04-09 11:02:44.282 INFO  org.springframework.cloud.commons.util.InetUtils  :170  [32m        [0;39m Cannot determine local hostname
+2023-04-09 11:02:44.286 INFO  com.douding.system.SystemApplication              :61   [32m        [0;39m Started SystemApplication in 7.265 seconds (JVM running for 4154.829)
+2023-04-09 11:02:44.287 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m        [0;39m Condition evaluation unchanged
+2023-04-09 11:02:44.288 INFO  com.douding.system.SystemApplication              :25   [32m        [0;39m 启动成功！！
+2023-04-09 11:02:44.288 INFO  com.douding.system.SystemApplication              :26   [32m        [0;39m System: 	http://127.0.0.1:9001
+2023-04-09 11:07:42.970 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 11:12:42.975 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 11:16:14.765 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :62   [32m        [0;39m Unregistering application API-SYSTEM with eureka with status DOWN
+2023-04-09 11:16:14.766 INFO  com.netflix.discovery.DiscoveryClient             :1352 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1681010174766, current=DOWN, previous=UP]
+2023-04-09 11:16:14.767 INFO  com.netflix.discovery.DiscoveryClient             :873  [32m        [0;39m DiscoveryClient_API-SYSTEM/localhost:api-system:9001: registering service...
+2023-04-09 11:16:14.769 INFO  com.netflix.discovery.DiscoveryClient             :882  [32m        [0;39m DiscoveryClient_API-SYSTEM/localhost:api-system:9001 - registration status: 204
+2023-04-09 11:16:14.816 INFO  com.netflix.discovery.DiscoveryClient             :935  [32m        [0;39m Shutting down DiscoveryClient ...
+2023-04-09 11:16:17.824 INFO  com.netflix.discovery.DiscoveryClient             :971  [32m        [0;39m Unregistering ...
+2023-04-09 11:16:17.830 INFO  c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :93   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://domain-eureka:8761/eureka/} exception=I/O error on DELETE request for "http://domain-eureka:8761/eureka/apps/API-SYSTEM/localhost:api-system:9001": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://domain-eureka:8761/eureka/apps/API-SYSTEM/localhost:api-system:9001": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:91)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:184)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:177)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:131)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:100)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 37 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:576)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 50 more
+
+2023-04-09 11:16:17.830 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: I/O error on DELETE request for "http://domain-eureka:8761/eureka/apps/API-SYSTEM/localhost:api-system:9001": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+2023-04-09 11:16:17.837 INFO  c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :84   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://domain-eureka:8761/eureka/}, exception=I/O error on DELETE request for "http://domain-eureka:8761/eureka/apps/API-SYSTEM/localhost:api-system:9001": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://domain-eureka:8761/eureka/apps/API-SYSTEM/localhost:api-system:9001": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:184)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:177)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:131)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:100)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:576)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 51 more
+
+2023-04-09 11:16:17.837 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: I/O error on DELETE request for "http://domain-eureka:8761/eureka/apps/API-SYSTEM/localhost:api-system:9001": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+2023-04-09 11:16:17.839 ERROR com.netflix.discovery.DiscoveryClient             :975  [32m        [0;39m DiscoveryClient_API-SYSTEM/localhost:api-system:9001 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:184)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:177)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:131)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:100)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-04-09 11:16:17.948 INFO  com.netflix.discovery.DiscoveryClient             :960  [32m        [0;39m Completed shut down of DiscoveryClient
+2023-04-09 15:39:46.837 INFO  org.hibernate.validator.internal.util.Version     :21   [32m        [0;39m HV000001: Hibernate Validator 6.2.0.Final
+2023-04-09 15:39:46.856 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :255  [32m        [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-04-09 15:39:47.444 INFO  o.s.c.c.client.ConfigServicePropertySourceLocator :226  [32m        [0;39m Fetching config from server at : http://domain-config:8888/
+2023-04-09 15:39:47.711 INFO  o.s.c.c.client.ConfigServicePropertySourceLocator :150  [32m        [0;39m Located environment: name=api-system, profiles=[dev], label=dev, version=null, state=null
+2023-04-09 15:39:47.711 INFO  o.s.c.b.c.PropertySourceBootstrapConfiguration    :109  [32m        [0;39m Located property source: [BootstrapPropertySource {name='bootstrapProperties-configClient'}, BootstrapPropertySource {name='bootstrapProperties-class path resource [config/dev/api-system-dev.yml]'}]
+2023-04-09 15:39:47.729 INFO  com.douding.system.SystemApplication              :663  [32m        [0;39m The following profiles are active: dev
+2023-04-09 15:39:48.742 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :262  [32m        [0;39m Multiple Spring Data modules found, entering strict repository configuration mode!
+2023-04-09 15:39:48.745 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :132  [32m        [0;39m Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2023-04-09 15:39:48.775 INFO  o.s.d.r.config.RepositoryConfigurationDelegate    :201  [32m        [0;39m Finished Spring Data repository scanning in 6 ms. Found 0 Redis repository interfaces.
+2023-04-09 15:39:48.987 INFO  o.springframework.cloud.context.scope.GenericScope:283  [32m        [0;39m BeanFactory id=2c6dd185-5e84-318b-aeab-2e185311e4a7
+2023-04-09 15:39:49.875 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :108  [32m        [0;39m Tomcat initialized with port(s): 9001 (http)
+2023-04-09 15:39:49.885 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Initializing ProtocolHandler ["http-nio-9001"]
+2023-04-09 15:39:49.885 INFO  org.apache.catalina.core.StandardService          :173  [32m        [0;39m Starting service [Tomcat]
+2023-04-09 15:39:49.885 INFO  org.apache.catalina.core.StandardEngine           :173  [32m        [0;39m Starting Servlet engine: [Apache Tomcat/9.0.50]
+2023-04-09 15:39:49.887 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m Loaded Apache Tomcat Native library [1.2.31] using APR version [1.7.0].
+2023-04-09 15:39:49.888 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m APR capabilities: IPv6 [true], sendfile [true], accept filters [false], random [true], UDS [true].
+2023-04-09 15:39:49.888 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m APR/OpenSSL configuration: useAprConnector [false], useOpenSSL [true]
+2023-04-09 15:39:49.892 INFO  org.apache.catalina.core.AprLifecycleListener     :173  [32m        [0;39m OpenSSL successfully initialized [OpenSSL 1.1.1l  24 Aug 2021]
+2023-04-09 15:39:49.972 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring embedded WebApplicationContext
+2023-04-09 15:39:49.972 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext    :290  [32m        [0;39m Root WebApplicationContext: initialization completed in 2224 ms
+2023-04-09 15:39:52.599 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :58   [32m        [0;39m LiveReload server is running on port 35729
+2023-04-09 15:39:52.834 INFO  o.s.c.n.e.c.DiscoveryClientOptionalArgsConfiguration:68   [32m        [0;39m Eureka HTTP Client uses RestTemplate.
+2023-04-09 15:39:53.106 WARN  o.s.c.l.c.LoadBalancerCacheAutoConfiguration$LoadBalancerCaffeineWarnLogger:82   [32m        [0;39m Spring Cloud LoadBalancer is currently working with the default cache. You can switch to using Caffeine cache, by adding it and org.springframework.cache.caffeine.CaffeineCacheManager to the classpath.
+2023-04-09 15:39:53.171 INFO  o.s.cloud.netflix.eureka.InstanceInfoFactory      :67   [32m        [0;39m Setting initial instance status as: STARTING
+2023-04-09 15:39:53.197 INFO  com.netflix.discovery.DiscoveryClient             :372  [32m        [0;39m Initializing Eureka in region us-east-1
+2023-04-09 15:39:53.201 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 15:39:53.222 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Disable delta property : false
+2023-04-09 15:39:53.222 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Single vip registry refresh property : null
+2023-04-09 15:39:53.222 INFO  com.netflix.discovery.DiscoveryClient             :1009 [32m        [0;39m Force full registry fetch : false
+2023-04-09 15:39:53.223 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application is null : false
+2023-04-09 15:39:53.223 INFO  com.netflix.discovery.DiscoveryClient             :1011 [32m        [0;39m Registered Applications size is zero : true
+2023-04-09 15:39:53.223 INFO  com.netflix.discovery.DiscoveryClient             :1013 [32m        [0;39m Application version is -1: true
+2023-04-09 15:39:53.223 INFO  com.netflix.discovery.DiscoveryClient             :1097 [32m        [0;39m Getting all instance registry info from the eureka server
+2023-04-09 15:39:53.379 INFO  com.netflix.discovery.DiscoveryClient             :1106 [32m        [0;39m The response status is 200
+2023-04-09 15:39:53.380 INFO  com.netflix.discovery.DiscoveryClient             :1321 [32m        [0;39m Starting heartbeat executor: renew interval is: 30
+2023-04-09 15:39:53.382 INFO  com.netflix.discovery.InstanceInfoReplicator      :60   [32m        [0;39m InstanceInfoReplicator onDemand update allowed rate per min is 4
+2023-04-09 15:39:53.386 INFO  com.netflix.discovery.DiscoveryClient             :492  [32m        [0;39m Discovery Client initialized at timestamp 1681025993385 with initial instances count: 0
+2023-04-09 15:39:53.391 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :41   [32m        [0;39m Registering application API-SYSTEM with eureka with status UP
+2023-04-09 15:39:53.392 INFO  com.netflix.discovery.DiscoveryClient             :1352 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1681025993392, current=UP, previous=STARTING]
+2023-04-09 15:39:53.393 INFO  com.netflix.discovery.DiscoveryClient             :873  [32m        [0;39m DiscoveryClient_API-SYSTEM/LAPTOP-3JCF7I14:api-system:9001: registering service...
+2023-04-09 15:39:53.393 INFO  org.apache.coyote.http11.Http11NioProtocol        :173  [32m        [0;39m Starting ProtocolHandler ["http-nio-9001"]
+2023-04-09 15:39:53.412 INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer      :220  [32m        [0;39m Tomcat started on port(s): 9001 (http) with context path '/system'
+2023-04-09 15:39:53.412 INFO  o.s.c.n.e.s.EurekaAutoServiceRegistration         :144  [32m        [0;39m Updating port to 9001
+2023-04-09 15:39:53.420 INFO  com.netflix.discovery.DiscoveryClient             :882  [32m        [0;39m DiscoveryClient_API-SYSTEM/LAPTOP-3JCF7I14:api-system:9001 - registration status: 204
+2023-04-09 15:39:53.631 INFO  com.douding.system.SystemApplication              :61   [32m        [0;39m Started SystemApplication in 7.431 seconds (JVM running for 10.633)
+2023-04-09 15:39:53.633 INFO  com.douding.system.SystemApplication              :25   [32m        [0;39m 启动成功！！
+2023-04-09 15:39:53.633 INFO  com.douding.system.SystemApplication              :26   [32m        [0;39m System: 	http://127.0.0.1:9001
+2023-04-09 15:40:23.385 INFO  com.netflix.discovery.DiscoveryClient             :1007 [32m        [0;39m Disable delta property : false
+2023-04-09 15:40:23.387 INFO  com.netflix.discovery.DiscoveryClient             :1008 [32m        [0;39m Single vip registry refresh property : null
+2023-04-09 15:40:23.387 INFO  com.netflix.discovery.DiscoveryClient             :1009 [32m        [0;39m Force full registry fetch : false
+2023-04-09 15:40:23.387 INFO  com.netflix.discovery.DiscoveryClient             :1010 [32m        [0;39m Application is null : false
+2023-04-09 15:40:23.387 INFO  com.netflix.discovery.DiscoveryClient             :1011 [32m        [0;39m Registered Applications size is zero : true
+2023-04-09 15:40:23.387 INFO  com.netflix.discovery.DiscoveryClient             :1013 [32m        [0;39m Application version is -1: false
+2023-04-09 15:40:23.387 INFO  com.netflix.discovery.DiscoveryClient             :1097 [32m        [0;39m Getting all instance registry info from the eureka server
+2023-04-09 15:40:23.400 INFO  com.netflix.discovery.DiscoveryClient             :1106 [32m        [0;39m The response status is 200
+2023-04-09 15:43:36.786 INFO  o.a.c.c.C.[Tomcat].[localhost].[/system]          :173  [32m        [0;39m Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-04-09 15:43:36.786 INFO  org.springframework.web.servlet.DispatcherServlet :525  [32m        [0;39m Initializing Servlet 'dispatcherServlet'
+2023-04-09 15:43:36.788 INFO  org.springframework.web.servlet.DispatcherServlet :547  [32m        [0;39m Completed initialization in 2 ms
+2023-04-09 15:43:37.154 INFO  com.douding.server.config.LogAspect               :76   [32mQWAIbZC6[0;39m ------------- 【图片验证码】操作开始 -------------
+2023-04-09 15:43:37.155 INFO  com.douding.server.config.LogAspect               :77   [32mQWAIbZC6[0;39m 请求地址: http://LAPTOP-3JCF7I14:9001/system/admin/kaptcha/image-code/yUoRySAS GET
+2023-04-09 15:43:37.155 INFO  com.douding.server.config.LogAspect               :78   [32mQWAIbZC6[0;39m 类名方法: com.douding.system.controller.admin.KaptchaController.imageCode
+2023-04-09 15:43:37.155 INFO  com.douding.server.config.LogAspect               :79   [32mQWAIbZC6[0;39m 远程地址: 127.0.0.1
+2023-04-09 15:43:37.562 INFO  com.douding.server.config.LogAspect               :97   [32mQWAIbZC6[0;39m 请求参数: ["yUoRySAS",null,null]
+2023-04-09 15:43:46.799 INFO  com.douding.server.config.LogAspect               :109  [32mQWAIbZC6[0;39m 返回结果: null
+2023-04-09 15:43:46.800 INFO  com.douding.server.config.LogAspect               :110  [32mQWAIbZC6[0;39m ------------- 结束 耗时：9900 ms -------------
+2023-04-09 15:43:51.589 INFO  com.douding.server.config.LogAspect               :76   [32mO3fGyZch[0;39m ------------- 【用户】操作开始 -------------
+2023-04-09 15:43:51.590 INFO  com.douding.server.config.LogAspect               :77   [32mO3fGyZch[0;39m 请求地址: http://LAPTOP-3JCF7I14:9001/system/admin/user/login POST
+2023-04-09 15:43:51.590 INFO  com.douding.server.config.LogAspect               :78   [32mO3fGyZch[0;39m 类名方法: com.douding.system.controller.admin.UserController.login
+2023-04-09 15:43:51.590 INFO  com.douding.server.config.LogAspect               :79   [32mO3fGyZch[0;39m 远程地址: 127.0.0.1
+2023-04-09 15:43:53.319 INFO  com.douding.server.config.LogAspect               :97   [32mO3fGyZch[0;39m 请求参数: [{"imageCodeToken":"yUoRySAS","loginName":"admin","password":"6fb8a81a9009027fb1a9355113aa2e5a"},null]
+2023-04-09 15:43:53.725 INFO  com.zaxxer.hikari.HikariDataSource                :110  [32mO3fGyZch[0;39m HikariPool-1 - Starting...
+2023-04-09 15:43:54.679 INFO  com.zaxxer.hikari.HikariDataSource                :123  [32mO3fGyZch[0;39m HikariPool-1 - Start completed.
+2023-04-09 15:43:54.688 DEBUG c.douding.server.mapper.UserMapper.selectByExample:159  [32mO3fGyZch[0;39m ==>  Preparing: select id, login_name, `name`, `password` from user WHERE ( login_name = ? ) 
+2023-04-09 15:43:54.710 DEBUG c.douding.server.mapper.UserMapper.selectByExample:159  [32mO3fGyZch[0;39m ==> Parameters: admin(String)
+2023-04-09 15:43:54.734 TRACE c.douding.server.mapper.UserMapper.selectByExample:165  [32mO3fGyZch[0;39m <==    Columns: id, login_name, name, password
+2023-04-09 15:43:54.735 TRACE c.douding.server.mapper.UserMapper.selectByExample:165  [32mO3fGyZch[0;39m <==        Row: T4wswetU, admin, alex, 1f15d405949c4ed3c2279aa6d48b1e9a
+2023-04-09 15:43:54.736 DEBUG c.douding.server.mapper.UserMapper.selectByExample:159  [32mO3fGyZch[0;39m <==      Total: 1
+2023-04-09 15:43:54.789 DEBUG c.d.server.mapper.my.MyUserMapper.findResources   :159  [32mO3fGyZch[0;39m ==>  Preparing: select distinct r.id, r.`name`, r.page, r.request, r.parent from role_user ru, role_resource rr, resource r where ru.user_id = ? and ru.role_id = rr.role_id and rr.resource_id = r.id order by r.id asc 
+2023-04-09 15:43:54.789 DEBUG c.d.server.mapper.my.MyUserMapper.findResources   :159  [32mO3fGyZch[0;39m ==> Parameters: T4wswetU(String)
+2023-04-09 15:43:54.797 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==    Columns: id, name, page, request, parent
+2023-04-09 15:43:54.797 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 00, 欢迎, welcome, null, 
+2023-04-09 15:43:54.798 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 01, 系统管理, null, null, 
+2023-04-09 15:43:54.798 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 0101, 用户管理, system/user, null, 01
+2023-04-09 15:43:54.799 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 010101, 保存, null, ["/system/admin/user/list","/system/admin/user/save"], 0101
+2023-04-09 15:43:54.799 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 010102, 删除, null, ["/system/admin/user/delete"], 0101
+2023-04-09 15:43:54.799 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 010103, 重置密码, null, ["/system/admin/user/save-password"], 0101
+2023-04-09 15:43:54.800 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 0102, 资源管理, system/resource, null, 01
+2023-04-09 15:43:54.800 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 010201, 保存/显示, null, ["/system/admin/resource"], 0102
+2023-04-09 15:43:54.800 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 0103, 角色管理, system/role, null, 01
+2023-04-09 15:43:54.800 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 010301, 角色/权限管理, null, ["/system/admin/role"], 0103
+2023-04-09 15:43:54.801 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 02, 业务管理, null, null, 
+2023-04-09 15:43:54.801 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 0201, 分类管理, business/category, null, 02
+2023-04-09 15:43:54.801 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 020101, 增删改查, null, ["/business/admin/category"], 0201
+2023-04-09 15:43:54.801 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 0202, 课程管理, business/course, null, 02
+2023-04-09 15:43:54.801 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 020201, 增删改查, null, ["/business/admin/course","/business/admin/category/all"], 0202
+2023-04-09 15:43:54.802 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 0203, 讲师管理, business/teacher, null, 02
+2023-04-09 15:43:54.802 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 020301, 增删改查, null, ["/business/admin/teacher"], 0203
+2023-04-09 15:43:54.802 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 0204, 会员管理, business/member, null, 02
+2023-04-09 15:43:54.802 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 020401, 增删改查, null, ["/business/admin/member"], 0204
+2023-04-09 15:43:54.803 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 0205, 短信管理, business/sms, null, 02
+2023-04-09 15:43:54.803 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 020501, 增删改查, null, ["/business/admin/sms"], 0205
+2023-04-09 15:43:54.803 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 0206, 大章管理, business/chapter, null, 02
+2023-04-09 15:43:54.803 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 020601, 增删改查, null, ["/business/admin/chapter"], 0206
+2023-04-09 15:43:54.803 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 0207, 小节管理, business/section, null, 02
+2023-04-09 15:43:54.804 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 020701, 增删改查, null, ["/business/admin/section"], 0207
+2023-04-09 15:43:54.804 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 0208, 课程内容, business/content, null, 02
+2023-04-09 15:43:54.805 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 020801, 增删改查, null, ["/business/admin/course","/business/admin/course-content-file"], 0208
+2023-04-09 15:43:54.805 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 03, 文件管理, null, null, 
+2023-04-09 15:43:54.805 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 0301, 文件管理, file/file, null, 03
+2023-04-09 15:43:54.805 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 030101, 文件管理, null, ["/file/admin/file"], 0301
+2023-04-09 15:43:54.806 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 030102, 文件验证, null, ["/file/admin/oss-check"], 0301
+2023-04-09 15:43:54.806 TRACE c.d.server.mapper.my.MyUserMapper.findResources   :165  [32mO3fGyZch[0;39m <==        Row: 030103, 文件上传, null, ["/file/admin/oss-append"], 0301
+2023-04-09 15:43:54.806 DEBUG c.d.server.mapper.my.MyUserMapper.findResources   :159  [32mO3fGyZch[0;39m <==      Total: 32
+2023-04-09 15:43:54.809 INFO  com.douding.server.service.UserService            :163  [32mO3fGyZch[0;39m 有权限的请求：[/system/admin/user/save, /business/admin/section, /file/admin/oss-check, /business/admin/teacher, /system/admin/user/save-password, /system/admin/role, /file/admin/oss-append, /business/admin/chapter, /business/admin/sms, /system/admin/user/delete, /business/admin/category/all, /business/admin/course-content-file, /business/admin/category, /business/admin/course, /business/admin/member, /system/admin/user/list, /system/admin/resource, /file/admin/file]
+2023-04-09 15:43:54.939 INFO  com.douding.system.controller.admin.UserController:124  [32mO3fGyZch[0;39m 用户登陆成功LoginUserDto{id='T4wswetU', loginName='admin', name='alex', resources=[ResourceDto{id='00', name='欢迎', page='welcome', request='null', parent='', children=null}, ResourceDto{id='01', name='系统管理', page='null', request='null', parent='', children=null}, ResourceDto{id='0101', name='用户管理', page='system/user', request='null', parent='01', children=null}, ResourceDto{id='010101', name='保存', page='null', request='["/system/admin/user/list","/system/admin/user/save"]', parent='0101', children=null}, ResourceDto{id='010102', name='删除', page='null', request='["/system/admin/user/delete"]', parent='0101', children=null}, ResourceDto{id='010103', name='重置密码', page='null', request='["/system/admin/user/save-password"]', parent='0101', children=null}, ResourceDto{id='0102', name='资源管理', page='system/resource', request='null', parent='01', children=null}, ResourceDto{id='010201', name='保存/显示', page='null', request='["/system/admin/resource"]', parent='0102', children=null}, ResourceDto{id='0103', name='角色管理', page='system/role', request='null', parent='01', children=null}, ResourceDto{id='010301', name='角色/权限管理', page='null', request='["/system/admin/role"]', parent='0103', children=null}, ResourceDto{id='02', name='业务管理', page='null', request='null', parent='', children=null}, ResourceDto{id='0201', name='分类管理', page='business/category', request='null', parent='02', children=null}, ResourceDto{id='020101', name='增删改查', page='null', request='["/business/admin/category"]', parent='0201', children=null}, ResourceDto{id='0202', name='课程管理', page='business/course', request='null', parent='02', children=null}, ResourceDto{id='020201', name='增删改查', page='null', request='["/business/admin/course","/business/admin/category/all"]', parent='0202', children=null}, ResourceDto{id='0203', name='讲师管理', page='business/teacher', request='null', parent='02', children=null}, ResourceDto{id='020301', name='增删改查', page='null', request='["/business/admin/teacher"]', parent='0203', children=null}, ResourceDto{id='0204', name='会员管理', page='business/member', request='null', parent='02', children=null}, ResourceDto{id='020401', name='增删改查', page='null', request='["/business/admin/member"]', parent='0204', children=null}, ResourceDto{id='0205', name='短信管理', page='business/sms', request='null', parent='02', children=null}, ResourceDto{id='020501', name='增删改查', page='null', request='["/business/admin/sms"]', parent='0205', children=null}, ResourceDto{id='0206', name='大章管理', page='business/chapter', request='null', parent='02', children=null}, ResourceDto{id='020601', name='增删改查', page='null', request='["/business/admin/chapter"]', parent='0206', children=null}, ResourceDto{id='0207', name='小节管理', page='business/section', request='null', parent='02', children=null}, ResourceDto{id='020701', name='增删改查', page='null', request='["/business/admin/section"]', parent='0207', children=null}, ResourceDto{id='0208', name='课程内容', page='business/content', request='null', parent='02', children=null}, ResourceDto{id='020801', name='增删改查', page='null', request='["/business/admin/course","/business/admin/course-content-file"]', parent='0208', children=null}, ResourceDto{id='03', name='文件管理', page='null', request='null', parent='', children=null}, ResourceDto{id='0301', name='文件管理', page='file/file', request='null', parent='03', children=null}, ResourceDto{id='030101', name='文件管理', page='null', request='["/file/admin/file"]', parent='0301', children=null}, ResourceDto{id='030102', name='文件验证', page='null', request='["/file/admin/oss-check"]', parent='0301', children=null}, ResourceDto{id='030103', name='文件上传', page='null', request='["/file/admin/oss-append"]', parent='0301', children=null}], requests=[/system/admin/user/save, /business/admin/section, /file/admin/oss-check, /business/admin/teacher, /system/admin/user/save-password, /system/admin/role, /file/admin/oss-append, /business/admin/chapter, /business/admin/sms, /system/admin/user/delete, /business/admin/category/all, /business/admin/course-content-file, /business/admin/category, /business/admin/course, /business/admin/member, /system/admin/user/list, /system/admin/resource, /file/admin/file], token='DlH8Ssax'}
+2023-04-09 15:43:54.944 INFO  com.douding.server.config.LogAspect               :109  [32mO3fGyZch[0;39m 返回结果: {"content":{"id":"T4wswetU","loginName":"admin","name":"alex","requests":["/system/admin/user/save","/business/admin/section","/file/admin/oss-check","/business/admin/teacher","/system/admin/user/save-password","/system/admin/role","/file/admin/oss-append","/business/admin/chapter","/business/admin/sms","/system/admin/user/delete","/business/admin/category/all","/business/admin/course-content-file","/business/admin/category","/business/admin/course","/business/admin/member","/system/admin/user/list","/system/admin/resource","/file/admin/file"],"resources":[{"id":"00","name":"欢迎","page":"welcome","parent":""},{"id":"01","name":"系统管理","parent":""},{"id":"0101","name":"用户管理","page":"system/user","parent":"01"},{"id":"010101","name":"保存","parent":"0101","request":"[\"/system/admin/user/list\",\"/system/admin/user/save\"]"},{"id":"010102","name":"删除","parent":"0101","request":"[\"/system/admin/user/delete\"]"},{"id":"010103","name":"重置密码","parent":"0101","request":"[\"/system/admin/user/save-password\"]"},{"id":"0102","name":"资源管理","page":"system/resource","parent":"01"},{"id":"010201","name":"保存/显示","parent":"0102","request":"[\"/system/admin/resource\"]"},{"id":"0103","name":"角色管理","page":"system/role","parent":"01"},{"id":"010301","name":"角色/权限管理","parent":"0103","request":"[\"/system/admin/role\"]"},{"id":"02","name":"业务管理","parent":""},{"id":"0201","name":"分类管理","page":"business/category","parent":"02"},{"id":"020101","name":"增删改查","parent":"0201","request":"[\"/business/admin/category\"]"},{"id":"0202","name":"课程管理","page":"business/course","parent":"02"},{"id":"020201","name":"增删改查","parent":"0202","request":"[\"/business/admin/course\",\"/business/admin/category/all\"]"},{"id":"0203","name":"讲师管理","page":"business/teacher","parent":"02"},{"id":"020301","name":"增删改查","parent":"0203","request":"[\"/business/admin/teacher\"]"},{"id":"0204","name":"会员管理","page":"business/member","parent":"02"},{"id":"020401","name":"增删改查","parent":"0204","request":"[\"/business/admin/member\"]"},{"id":"0205","name":"短信管理","page":"business/sms","parent":"02"},{"id":"020501","name":"增删改查","parent":"0205","request":"[\"/business/admin/sms\"]"},{"id":"0206","name":"大章管理","page":"business/chapter","parent":"02"},{"id":"020601","name":"增删改查","parent":"0206","request":"[\"/business/admin/chapter\"]"},{"id":"0207","name":"小节管理","page":"business/section","parent":"02"},{"id":"020701","name":"增删改查","parent":"0207","request":"[\"/business/admin/section\"]"},{"id":"0208","name":"课程内容","page":"business/content","parent":"02"},{"id":"020801","name":"增删改查","parent":"0208","request":"[\"/business/admin/course\",\"/business/admin/course-content-file\"]"},{"id":"03","name":"文件管理","parent":""},{"id":"0301","name":"文件管理","page":"file/file","parent":"03"},{"id":"030101","name":"文件管理","parent":"0301","request":"[\"/file/admin/file\"]"},{"id":"030102","name":"文件验证","parent":"0301","request":"[\"/file/admin/oss-check\"]"},{"id":"030103","name":"文件上传","parent":"0301","request":"[\"/file/admin/oss-append\"]"}],"token":"DlH8Ssax"},"success":true}
+2023-04-09 15:43:54.945 INFO  com.douding.server.config.LogAspect               :110  [32mO3fGyZch[0;39m ------------- 结束 耗时：3356 ms -------------
+2023-04-09 15:44:53.229 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 15:49:53.242 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 15:54:53.247 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 15:59:53.255 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 16:04:53.258 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 16:09:53.360 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 16:14:53.369 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 16:19:53.374 INFO  c.n.d.shared.resolver.aws.ConfigClusterResolver   :43   [32m        [0;39m Resolving eureka endpoints via configuration
+2023-04-09 16:23:15.372 INFO  o.s.c.n.e.serviceregistry.EurekaServiceRegistry   :62   [32m        [0;39m Unregistering application API-SYSTEM with eureka with status DOWN
+2023-04-09 16:23:15.373 INFO  com.netflix.discovery.DiscoveryClient             :1352 [32m        [0;39m Saw local status change event StatusChangeEvent [timestamp=1681028595373, current=DOWN, previous=UP]
+2023-04-09 16:23:15.374 INFO  com.netflix.discovery.DiscoveryClient             :873  [32m        [0;39m DiscoveryClient_API-SYSTEM/LAPTOP-3JCF7I14:api-system:9001: registering service...
+2023-04-09 16:23:15.512 INFO  c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :84   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://domain-eureka:8761/eureka/}, exception=I/O error on POST request for "http://domain-eureka:8761/eureka/apps/API-SYSTEM": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://domain-eureka:8761/eureka/apps/API-SYSTEM": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.register(RestTemplateEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 22 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:576)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 35 more
+
+2023-04-09 16:23:15.513 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: I/O error on POST request for "http://domain-eureka:8761/eureka/apps/API-SYSTEM": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+2023-04-09 16:23:15.549 WARN  com.netflix.discovery.DiscoveryClient             :878  [32m        [0;39m DiscoveryClient_API-SYSTEM/LAPTOP-3JCF7I14:api-system:9001 - registration failed Cannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-04-09 16:23:15.550 WARN  com.netflix.discovery.InstanceInfoReplicator      :125  [32m        [0;39m There was a problem with the instance info replicator
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$1.execute(EurekaHttpClientDecorator.java:59)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.register(EurekaHttpClientDecorator.java:56)
+	at com.netflix.discovery.DiscoveryClient.register(DiscoveryClient.java:876)
+	at com.netflix.discovery.InstanceInfoReplicator.run(InstanceInfoReplicator.java:121)
+	at com.netflix.discovery.InstanceInfoReplicator$1.run(InstanceInfoReplicator.java:101)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:577)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+	at java.base/java.util.concurrent.ScheduledThreadPoolExecutor$ScheduledFutureTask.run(ScheduledThreadPoolExecutor.java:304)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-04-09 16:23:15.721 INFO  com.zaxxer.hikari.HikariDataSource                :350  [32m        [0;39m HikariPool-1 - Shutdown initiated...
+2023-04-09 16:23:15.729 INFO  com.zaxxer.hikari.HikariDataSource                :352  [32m        [0;39m HikariPool-1 - Shutdown completed.
+2023-04-09 16:23:16.250 INFO  com.netflix.discovery.DiscoveryClient             :935  [32m        [0;39m Shutting down DiscoveryClient ...
+2023-04-09 16:23:19.260 INFO  com.netflix.discovery.DiscoveryClient             :971  [32m        [0;39m Unregistering ...
+2023-04-09 16:23:19.265 INFO  c.n.d.s.t.decorator.RedirectingEurekaHttpClient   :84   [32m        [0;39m Request execution error. endpoint=DefaultEndpoint{ serviceUrl='http://domain-eureka:8761/eureka/}, exception=I/O error on DELETE request for "http://domain-eureka:8761/eureka/apps/API-SYSTEM/LAPTOP-3JCF7I14:api-system:9001": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect stacktrace=org.springframework.web.client.ResourceAccessException: I/O error on DELETE request for "http://domain-eureka:8761/eureka/apps/API-SYSTEM/LAPTOP-3JCF7I14:api-system:9001": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:785)
+	at org.springframework.web.client.RestTemplate.execute(RestTemplate.java:711)
+	at org.springframework.web.client.RestTemplate.exchange(RestTemplate.java:602)
+	at org.springframework.cloud.netflix.eureka.http.RestTemplateEurekaHttpClient.cancel(RestTemplateEurekaHttpClient.java:87)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.executeOnNewServer(RedirectingEurekaHttpClient.java:121)
+	at com.netflix.discovery.shared.transport.decorator.RedirectingEurekaHttpClient.execute(RedirectingEurekaHttpClient.java:80)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:120)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:184)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:177)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:131)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:100)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:156)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:376)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:393)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:236)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:186)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:110)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:56)
+	at org.springframework.http.client.HttpComponentsClientHttpRequest.executeInternal(HttpComponentsClientHttpRequest.java:87)
+	at org.springframework.http.client.AbstractBufferingClientHttpRequest.executeInternal(AbstractBufferingClientHttpRequest.java:48)
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:66)
+	at org.springframework.web.client.RestTemplate.doExecute(RestTemplate.java:776)
+	... 38 more
+Caused by: java.net.ConnectException: Connection refused: connect
+	at java.base/sun.nio.ch.Net.connect0(Native Method)
+	at java.base/sun.nio.ch.Net.connect(Net.java:579)
+	at java.base/sun.nio.ch.Net.connect(Net.java:568)
+	at java.base/sun.nio.ch.NioSocketImpl.connect(NioSocketImpl.java:576)
+	at java.base/java.net.SocksSocketImpl.connect(SocksSocketImpl.java:327)
+	at java.base/java.net.Socket.connect(Socket.java:666)
+	at org.apache.http.conn.socket.PlainConnectionSocketFactory.connectSocket(PlainConnectionSocketFactory.java:75)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 51 more
+
+2023-04-09 16:23:19.266 WARN  c.n.d.s.t.decorator.RetryableEurekaHttpClient     :130  [32m        [0;39m Request execution failed with message: I/O error on DELETE request for "http://domain-eureka:8761/eureka/apps/API-SYSTEM/LAPTOP-3JCF7I14:api-system:9001": Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect; nested exception is org.apache.http.conn.HttpHostConnectException: Connect to domain-eureka:8761 [domain-eureka/127.0.0.1] failed: Connection refused: connect
+2023-04-09 16:23:19.266 ERROR com.netflix.discovery.DiscoveryClient             :975  [32m        [0;39m DiscoveryClient_API-SYSTEM/LAPTOP-3JCF7I14:api-system:9001 - de-registration failedCannot execute request on any known server
+com.netflix.discovery.shared.transport.TransportException: Cannot execute request on any known server
+	at com.netflix.discovery.shared.transport.decorator.RetryableEurekaHttpClient.execute(RetryableEurekaHttpClient.java:112)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator$2.execute(EurekaHttpClientDecorator.java:74)
+	at com.netflix.discovery.shared.transport.decorator.SessionedEurekaHttpClient.execute(SessionedEurekaHttpClient.java:77)
+	at com.netflix.discovery.shared.transport.decorator.EurekaHttpClientDecorator.cancel(EurekaHttpClientDecorator.java:71)
+	at com.netflix.discovery.DiscoveryClient.unregister(DiscoveryClient.java:972)
+	at com.netflix.discovery.DiscoveryClient.shutdown(DiscoveryClient.java:948)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleElement.invoke(InitDestroyAnnotationBeanPostProcessor.java:389)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor$LifecycleMetadata.invokeDestroyMethods(InitDestroyAnnotationBeanPostProcessor.java:347)
+	at org.springframework.beans.factory.annotation.InitDestroyAnnotationBeanPostProcessor.postProcessBeforeDestruction(InitDestroyAnnotationBeanPostProcessor.java:177)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:184)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.run(DisposableBeanAdapter.java:177)
+	at org.springframework.cloud.context.scope.GenericScope$BeanLifecycleWrapper.destroy(GenericScope.java:390)
+	at org.springframework.cloud.context.scope.GenericScope.destroy(GenericScope.java:136)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:200)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:587)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:559)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:1152)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:520)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:1145)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1106)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1075)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.doClose(ServletWebServerApplicationContext.java:172)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1021)
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:131)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:100)
+	at java.base/java.lang.Thread.run(Thread.java:1589)
+2023-04-09 16:23:19.328 INFO  com.netflix.discovery.DiscoveryClient             :960  [32m        [0;39m Completed shut down of DiscoveryClient
